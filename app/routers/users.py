@@ -23,7 +23,7 @@ router = APIRouter(prefix="/api/users")
     status_code=status.HTTP_201_CREATED,
     tags=[Tags.users.value],
     summary="Register a new user",
-    description="Reigster a new user",
+    description="Reigster a new user. Pass your real email address!",
     response_model=UserResponseScheme,
 )
 async def register_user(
